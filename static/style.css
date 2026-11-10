@@ -33,7 +33,7 @@ body {
     margin: 0 auto;
 }
 
-/* CABEÇALHO */
+
 
 .cabecalho {
     background: var(--verde-escuro);
@@ -59,7 +59,7 @@ body {
     font-size: 2rem;
 }
 
-/* APRESENTAÇÃO */
+
 
 .apresentacao {
     padding: 85px 0 100px;
@@ -109,7 +109,7 @@ body {
     font-size: 1.08rem;
 }
 
-/* ILUSTRAÇÃO */
+
 
 .ilustracao {
     position: relative;
@@ -173,7 +173,7 @@ body {
     font-size: 1rem;
 }
 
-/* CARTÕES */
+
 
 .grade-categorias {
     display: grid;
@@ -228,10 +228,9 @@ body {
 }
 
 .rosa {
-    --cor: #ff8bc4;
+    --cor: #e53935;
 }
 
-/* AVISO AMBIENTAL */
 
 .aviso {
     background: var(--fundo);
@@ -285,7 +284,7 @@ body {
     margin-top: 6px;
 }
 
-/* TABLETS */
+
 
 @media (max-width: 950px) {
     .apresentacao-conteudo {
@@ -316,7 +315,7 @@ body {
     }
 }
 
-/* CELULARES */
+
 
 @media (max-width: 600px) {
     .container {
