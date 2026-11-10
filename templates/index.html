@@ -10,6 +10,13 @@
 
     <link rel="stylesheet"
           href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .regras-descarte { margin-top: 18px; padding-top: 15px; border-top: 1px solid #dce5dc; text-align: left; }
+        .regras-descarte .regra-titulo { font-weight: 800; font-size: .9rem; margin: 12px 0 4px; }
+        .regras-descarte .aceita { color: #287343; }
+        .regras-descarte .nao-aceita { color: #a13d38; }
+        .regras-descarte p:not(.regra-titulo) { font-size: .86rem; line-height: 1.5; }
+    </style>
 </head>
 
 <body>
@@ -61,8 +68,8 @@
                     <h2>O que podemos coletar?</h2>
 
                     <p>
-                        Confira os tipos de resíduos aceitos
-                        e a cor correspondente na maquete.
+                        Confira o que pode e o que não pode ser depositado
+                        em cada compartimento da maquete.
                     </p>
                 </div>
 
@@ -75,6 +82,12 @@
                             Pilhas e baterias usadas
                             de dispositivos eletrônicos.
                         </p>
+                        <div class="regras-descarte">
+                            <p class="regra-titulo aceita">✓ Aceita</p>
+                            <p>Pilhas comuns, alcalinas e recarregáveis; baterias pequenas de relógios e controles.</p>
+                            <p class="regra-titulo nao-aceita">✕ Não aceita</p>
+                            <p>Baterias inchadas, vazando ou danificadas (entregar à equipe responsável); baterias grandes de veículos ou nobreaks.</p>
+                        </div>
                     </article>
 
                     <article class="categoria azul">
@@ -84,6 +97,12 @@
                             Cabos USB, carregadores
                             e fios eletrônicos sem uso.
                         </p>
+                        <div class="regras-descarte">
+                            <p class="regra-titulo aceita">✓ Aceita</p>
+                            <p>Cabos USB e HDMI, carregadores, adaptadores e fones de ouvido.</p>
+                            <p class="regra-titulo nao-aceita">✕ Não aceita</p>
+                            <p>Equipamentos completos; itens molhados ou sujos de substâncias.</p>
+                        </div>
                     </article>
 
                     <article class="categoria verde">
@@ -93,6 +112,12 @@
                             Mouses, teclados e pequenos
                             acessórios de computador.
                         </p>
+                        <div class="regras-descarte">
+                            <p class="regra-titulo aceita">✓ Aceita</p>
+                            <p>Mouses, teclados pequenos, webcams, pen drives e cartões de memória sem dados pessoais.</p>
+                            <p class="regra-titulo nao-aceita">✕ Não aceita</p>
+                            <p>Monitores, CPUs, notebooks, impressoras; dispositivos de armazenamento com dados não apagados.</p>
+                        </div>
                     </article>
 
                     <article class="categoria rosa">
@@ -102,6 +127,12 @@
                             Cartuchos de tinta e toners
                             de impressoras.
                         </p>
+                        <div class="regras-descarte">
+                            <p class="regra-titulo aceita">✓ Aceita</p>
+                            <p>Cartuchos de tinta e toners vazios.</p>
+                            <p class="regra-titulo nao-aceita">✕ Não aceita</p>
+                            <p>Cartuchos vazando; lâmpadas e outros itens.</p>
+                        </div>
                     </article>
 
                 </div>
