@@ -1,0 +1,413 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --verde-escuro: #103b2c;
+    --verde-principal: #3f8052;
+    --verde-vivo: #67b83e;
+    --verde-claro: #ddebd8;
+    --fundo: #fafaf5;
+    --preto: #202823;
+    --cinza: #53635a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--fundo);
+    color: var(--preto);
+    line-height: 1.6;
+}
+
+.container {
+    width: min(1180px, 90%);
+    margin: 0 auto;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    background: var(--verde-escuro);
+    color: white;
+    padding: 22px 0;
+    border-bottom: 5px solid var(--verde-vivo);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.logo strong {
+    font-weight: 900;
+}
+
+.logo-icone {
+    font-size: 2rem;
+}
+
+/* APRESENTAÇÃO */
+
+.apresentacao {
+    padding: 85px 0 100px;
+    background:
+        radial-gradient(
+            circle at 85% 35%,
+            rgba(103, 184, 62, 0.13),
+            transparent 38%
+        ),
+        var(--fundo);
+}
+
+.apresentacao-conteudo {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.etiqueta {
+    display: inline-block;
+    background: var(--verde-claro);
+    color: #245c35;
+    padding: 7px 16px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.apresentacao h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(2.4rem, 4.5vw, 4.2rem);
+    font-weight: 900;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+    margin-bottom: 26px;
+}
+
+.apresentacao h1 span {
+    color: var(--verde-principal);
+}
+
+.apresentacao p {
+    max-width: 590px;
+    color: var(--cinza);
+    font-size: 1.08rem;
+}
+
+/* ILUSTRAÇÃO */
+
+.ilustracao {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 350px;
+}
+
+.circulo-verde {
+    width: 320px;
+    height: 320px;
+    background: var(--verde-claro);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.simbolo-reciclagem {
+    font-size: 13rem;
+    color: var(--verde-principal);
+    line-height: 1;
+}
+
+.objetos-eletronicos {
+    position: absolute;
+    bottom: 8px;
+    display: flex;
+    gap: 20px;
+    font-size: 2.6rem;
+    background: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.09);
+}
+
+/* SEÇÃO DE COLETA */
+
+.coleta {
+    background: var(--verde-escuro);
+    padding: 75px 0 85px;
+    color: white;
+    border-radius: 55px 55px 0 0;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.titulo-secao h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(1.9rem, 4vw, 2.7rem);
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.titulo-secao p {
+    color: #d6e8db;
+    font-size: 1rem;
+}
+
+/* CARTÕES */
+
+.grade-categorias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.categoria {
+    background: white;
+    color: var(--preto);
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 9px solid var(--cor);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease;
+}
+
+.categoria:hover {
+    transform: translateY(-5px);
+}
+
+.categoria-icone {
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+.categoria h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+.categoria p {
+    font-size: 0.91rem;
+    color: var(--cinza);
+    line-height: 1.5;
+}
+
+.laranja {
+    --cor: #ffad60;
+}
+
+.azul {
+    --cor: #69b9ff;
+}
+
+.verde {
+    --cor: #76d75d;
+}
+
+.rosa {
+    --cor: #ff8bc4;
+}
+
+/* AVISO AMBIENTAL */
+
+.aviso {
+    background: var(--fundo);
+    padding: 60px 0;
+}
+
+.aviso-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    max-width: 950px;
+    margin: 0 auto;
+    background: var(--verde-claro);
+    border-radius: 25px;
+    padding: 28px 38px;
+}
+
+.aviso-icone {
+    font-size: 3rem;
+    flex-shrink: 0;
+}
+
+.aviso-conteudo p {
+    color: var(--preto);
+    font-size: 1rem;
+}
+
+.aviso-conteudo strong {
+    color: #245c35;
+}
+
+/* RODAPÉ */
+
+.rodape {
+    background: #09281e;
+    color: white;
+    text-align: center;
+    padding: 28px 0;
+}
+
+.rodape p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 1.05rem;
+}
+
+.rodape span {
+    display: block;
+    color: #aacbb5;
+    font-size: 0.8rem;
+    margin-top: 6px;
+}
+
+/* TABLETS */
+
+@media (max-width: 950px) {
+    .apresentacao-conteudo {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .apresentacao p {
+        margin: 0 auto;
+    }
+
+    .grade-categorias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ilustracao {
+        min-height: 290px;
+    }
+
+    .circulo-verde {
+        width: 260px;
+        height: 260px;
+    }
+
+    .simbolo-reciclagem {
+        font-size: 10rem;
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .cabecalho {
+        padding: 17px 0;
+    }
+
+    .logo {
+        font-size: 1.15rem;
+        gap: 8px;
+    }
+
+    .logo-icone {
+        font-size: 1.5rem;
+    }
+
+    .apresentacao {
+        padding: 55px 0 70px;
+    }
+
+    .apresentacao h1 {
+        font-size: 2.35rem;
+        letter-spacing: -0.8px;
+    }
+
+    .apresentacao p {
+        font-size: 0.98rem;
+    }
+
+    .ilustracao {
+        min-height: 260px;
+    }
+
+    .circulo-verde {
+        width: 230px;
+        height: 230px;
+    }
+
+    .simbolo-reciclagem {
+        font-size: 9rem;
+    }
+
+    .objetos-eletronicos {
+        font-size: 1.8rem;
+        gap: 13px;
+        padding: 10px 18px;
+    }
+
+    .coleta {
+        border-radius: 35px 35px 0 0;
+        padding: 55px 0 65px;
+    }
+
+    .grade-categorias {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .categoria {
+        padding: 26px 22px;
+    }
+
+    .categoria-icone {
+        font-size: 2.6rem;
+    }
+
+    .aviso {
+        padding: 45px 0;
+    }
+
+    .aviso-conteudo {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+        padding: 28px 22px;
+    }
+
+    .rodape p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .categoria {
+        transition: none;
+    }
+}

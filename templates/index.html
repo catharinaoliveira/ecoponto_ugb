@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#103b2c">
+
+    <title>EcoPonto Tech UGB</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="container">
+            <div class="logo">
+                <span><strong>EcoPonto</strong> Tech UGB</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="apresentacao">
+            <div class="container apresentacao-conteudo">
+
+                <div class="apresentacao-texto">
+                    <span class="etiqueta">
+                        Projeto de Intervenção Ambiental
+                    </span>
+
+                    <h1>
+                        Descarte consciente de
+                        <span>resíduos eletrônicos</span>
+                    </h1>
+
+                    <p>
+                        O EcoPonto Tech UGB é um projeto acadêmico
+                        que incentiva o descarte correto de pequenos
+                        resíduos eletrônicos, contribuindo para a
+                        preservação do meio ambiente.
+                    </p>
+                </div>
+
+                <div class="ilustracao" aria-hidden="true">
+                    <div class="circulo-verde">
+                        <span class="simbolo-reciclagem">♻</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="coleta">
+            <div class="container">
+
+                <div class="titulo-secao">
+                    <h2>O que podemos coletar?</h2>
+
+                    <p>
+                        Confira os tipos de resíduos aceitos
+                        e a cor correspondente na maquete.
+                    </p>
+                </div>
+
+                <div class="grade-categorias">
+
+                    <article class="categoria laranja">
+                        <div class="categoria-icone">🔋</div>
+                        <h3>Pilhas e baterias</h3>
+                        <p>
+                            Pilhas e baterias usadas
+                            de dispositivos eletrônicos.
+                        </p>
+                    </article>
+
+                    <article class="categoria azul">
+                        <div class="categoria-icone">🔌</div>
+                        <h3>Cabos e carregadores</h3>
+                        <p>
+                            Cabos USB, carregadores
+                            e fios eletrônicos sem uso.
+                        </p>
+                    </article>
+
+                    <article class="categoria verde">
+                        <div class="categoria-icone">🖱️</div>
+                        <h3>Periféricos</h3>
+                        <p>
+                            Mouses, teclados e pequenos
+                            acessórios de computador.
+                        </p>
+                    </article>
+
+                    <article class="categoria rosa">
+                        <div class="categoria-icone">🖨️</div>
+                        <h3>Cartuchos e toners</h3>
+                        <p>
+                            Cartuchos de tinta e toners
+                            de impressoras.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="aviso">
+            <div class="container">
+                <div class="aviso-conteudo">
+                    <p>
+                        <strong>Lembre-se:</strong>
+                        resíduos eletrônicos não devem ser
+                        descartados no lixo comum.
+                        Faça o descarte correto e ajude a
+                        reduzir os impactos ambientais!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>Projeto de Intervenção Ambiental | UGB</p>
+            <span>EcoPonto Tech UGB</span>
+        </div>
+    </footer>
+
+</body>
+</html>
